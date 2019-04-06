@@ -32,7 +32,6 @@ app.get("/", async (req, res) => {
   });
 });
 app.get("/vaga/:id", async (req, res) => {
-  console.log(req.params.id);
   const db = await dbConnection;
   const vaga = await db.get("select * from vagas where id =" + req.params.id);
   res.render("vaga", {
