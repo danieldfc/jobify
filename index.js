@@ -110,7 +110,7 @@ app.post("/admin/categorias/nova", async (req, res) => {
   await db.run(`insert into categorias(categoria)values('${categoria}')`);
   res.redirect("/admin/categorias");
 });
-
+// comment
 app.get("/admin/categorias/delete/:id", async (req, res) => {
   const db = await dbConnection;
   await db.run("delete from categorias where id = " + req.params.id);
