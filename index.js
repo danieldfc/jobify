@@ -161,7 +161,7 @@ const init = async () => {
 };
 init();
 
-app.listen(3000, err => {
+app.listen(port, err => {
   if (err) {
     console.log("Não foi possível iniciar o servidor.");
   } else {
